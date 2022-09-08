@@ -1,0 +1,9 @@
+custom_ipywidget_example/labextension/
+custom_ipywidget_example/nbextension/index.js
+custom_ipywidget_example/nbextension/index.js.map
+dist/
+docs/source/_static/embed-bundle.js
+docs/source/_static/embed-bundle.js.map
+lib/
+node_modules/
+package-lock.json
