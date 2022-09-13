@@ -40,14 +40,20 @@ export class ExampleModel extends DOMWidgetModel {
 }
 
 export class ExampleView extends DOMWidgetView {
+  // render() {
+  //   this.el.classList.add('custom-widget');
+
+  //   this.value_changed();
+  //   this.model.on('change:value', this.value_changed, this);
+  // }
   render() {
-    this.el.classList.add('custom-widget');
-
-    this.value_changed();
-    this.model.on('change:value', this.value_changed, this);
+      setTimeout(() => {
+          this.el.innerHTML = '<div style="width: 500px; height: 500px; background-color: red"></div>'
+      }, 5000)
+      return;
   }
 
-  value_changed() {
-    this.el.textContent = this.model.get('value');
-  }
+  // value_changed() {
+  //   this.el.textContent = this.model.get('value');
+  // }
 }
