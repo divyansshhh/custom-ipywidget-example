@@ -1,5 +1,5 @@
 
-custom_ipywidget_example
+myproject
 =====================================
 
 Version: |release|
@@ -10,13 +10,13 @@ A Custom Jupyter Widget Library
 Quickstart
 ----------
 
-To get started with custom_ipywidget_example, install with pip::
+To get started with myproject, install with pip::
 
-    pip install custom_ipywidget_example
+    pip install myproject
 
 or with conda::
 
-    conda install custom_ipywidget_example
+    conda install myproject
 
 
 Contents

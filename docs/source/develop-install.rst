@@ -3,11 +3,11 @@ Developer install
 =================
 
 
-To install a developer version of custom_ipywidget_example, you will first need to clone
+To install a developer version of myproject, you will first need to clone
 the repository::
 
-    git clone https://github.com/myorg/custom-ipywidget-example
-    cd custom-ipywidget-example
+    git clone https://github.com/myorg/myproject
+    cd myproject
 
 Next, install it with a develop install using pip::
 
@@ -17,9 +17,9 @@ Next, install it with a develop install using pip::
 If you are planning on working on the JS/frontend code, you should also do
 a link installation of the extension::
 
-    jupyter nbextension install [--sys-prefix / --user / --system] --symlink --py custom_ipywidget_example
+    jupyter nbextension install [--sys-prefix / --user / --system] --symlink --py myproject
 
-    jupyter nbextension enable [--sys-prefix / --user / --system] --py custom_ipywidget_example
+    jupyter nbextension enable [--sys-prefix / --user / --system] --py myproject
 
 with the `appropriate flag`_. Or, if you are using Jupyterlab::
 

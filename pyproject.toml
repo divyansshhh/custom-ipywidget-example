@@ -6,7 +6,7 @@ requires = [
 build-backend = "hatchling.build"
 
 [project]
-name = "custom_ipywidget_example"
+name = "myproject"
 description = "A Custom Jupyter Widget Library"
 readme = "README.md"
 license = { file = "LICENSE.txt" }
@@ -55,20 +55,20 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/myorg/custom-ipywidget-example"
+Homepage = "https://github.com/myorg/myproject"
 
 [tool.hatch.build]
 artifacts = [
-    "custom_ipywidget_example/nbextension/index.*",
-    "custom_ipywidget_example/labextension/*.tgz",
-    "custom_ipywidget_example/labextension",
+    "myproject/nbextension/index.*",
+    "myproject/labextension/*.tgz",
+    "myproject/labextension",
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"custom_ipywidget_example/nbextension" = "share/jupyter/nbextensions/custom_ipywidget_example"
-"custom_ipywidget_example/labextension" = "share/jupyter/labextensions/custom_ipywidget_example"
-"./install.json" = "share/jupyter/labextensions/custom_ipywidget_example/install.json"
-"./custom_ipywidget_example.json" = "etc/jupyter/nbconfig/notebook.d/custom_ipywidget_example.json"
+"myproject/nbextension" = "share/jupyter/nbextensions/myproject"
+"myproject/labextension" = "share/jupyter/labextensions/myproject"
+"./install.json" = "share/jupyter/labextensions/myproject/install.json"
+"./myproject.json" = "etc/jupyter/nbconfig/notebook.d/myproject.json"
 
 [tool.hatch.build.targets.sdist]
 exclude = [
@@ -78,12 +78,12 @@ exclude = [
 [tool.hatch.build.hooks.jupyter-builder]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "custom_ipywidget_example/nbextension/index.js",
-    "custom_ipywidget_example/labextension/package.json",
+    "myproject/nbextension/index.js",
+    "myproject/labextension/package.json",
 ]
 skip-if-exists = [
-    "custom_ipywidget_example/nbextension/index.js",
-    "custom_ipywidget_example/labextension/package.json",
+    "myproject/nbextension/index.js",
+    "myproject/labextension/package.json",
 ]
 dependencies = [
     "hatch-jupyter-builder>=0.5.0",
@@ -100,7 +100,7 @@ field = [
 ]
 file = [
     { src = "pyproject.toml", version_template = "version = \"{major}.{minor}.{patch}{channel}{release}\"" },
-    { src = "custom_ipywidget_example/_version.py" },
+    { src = "myproject/_version.py" },
 ]
 
 [tool.tbump.version]

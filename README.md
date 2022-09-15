@@ -1,8 +1,8 @@
 
-# custom-ipywidget-example
+# myproject
 
-[![Build Status](https://travis-ci.org/myorg/custom-ipywidget-example.svg?branch=master)](https://travis-ci.org/myorg/custom_ipywidget_example)
-[![codecov](https://codecov.io/gh/myorg/custom-ipywidget-example/branch/master/graph/badge.svg)](https://codecov.io/gh/myorg/custom-ipywidget-example)
+[![Build Status](https://travis-ci.org/myorg/myproject.svg?branch=master)](https://travis-ci.org/myorg/myproject)
+[![codecov](https://codecov.io/gh/myorg/myproject/branch/master/graph/badge.svg)](https://codecov.io/gh/myorg/myproject)
 
 
 A Custom Jupyter Widget Library
@@ -12,21 +12,21 @@ A Custom Jupyter Widget Library
 You can install using `pip`:
 
 ```bash
-pip install custom_ipywidget_example
+pip install myproject
 ```
 
 If you are using Jupyter Notebook 5.2 or earlier, you may also need to enable
 the nbextension:
 ```bash
-jupyter nbextension enable --py [--sys-prefix|--user|--system] custom_ipywidget_example
+jupyter nbextension enable --py [--sys-prefix|--user|--system] myproject
 ```
 
 ## Development Installation
 
 Create a dev environment:
 ```bash
-conda create -n custom_ipywidget_example-dev -c conda-forge nodejs yarn python jupyterlab
-conda activate custom_ipywidget_example-dev
+conda create -n myproject-dev -c conda-forge nodejs yarn python jupyterlab
+conda activate myproject-dev
 ```
 
 Install the python. This will also build the TS package.
@@ -45,8 +45,8 @@ yarn run build
 For classic notebook, you need to run:
 
 ```
-jupyter nbextension install --sys-prefix --symlink --overwrite --py custom_ipywidget_example
-jupyter nbextension enable --sys-prefix --py custom_ipywidget_example
+jupyter nbextension install --sys-prefix --symlink --overwrite --py myproject
+jupyter nbextension enable --sys-prefix --py myproject
 ```
 
 Note that the `--symlink` flag doesn't work on Windows, so you will here have to run

@@ -27,7 +27,7 @@ module.exports = [
     entry: './src/extension.ts',
     output: {
       filename: 'index.js',
-      path: path.resolve(__dirname, 'custom_ipywidget_example', 'nbextension'),
+      path: path.resolve(__dirname, 'myproject', 'nbextension'),
       libraryTarget: 'amd',
       publicPath: '',
     },
@@ -40,7 +40,7 @@ module.exports = [
   },
 
   /**
-   * Embeddable custom-ipywidget-example bundle
+   * Embeddable myproject bundle
    *
    * This bundle is almost identical to the notebook extension bundle. The only
    * difference is in the configuration of the webpack public path for the
@@ -55,8 +55,8 @@ module.exports = [
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'amd',
-        library: "custom-ipywidget-example",
-        publicPath: 'https://unpkg.com/custom-ipywidget-example@' + version + '/dist/'
+        library: "myproject",
+        publicPath: 'https://unpkg.com/myproject@' + version + '/dist/'
     },
     devtool: 'source-map',
     module: {
@@ -77,7 +77,7 @@ module.exports = [
     output: {
       filename: 'embed-bundle.js',
       path: path.resolve(__dirname, 'docs', 'source', '_static'),
-      library: "custom-ipywidget-example",
+      library: "myproject",
       libraryTarget: 'amd'
     },
     module: {

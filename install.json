@@ -1,5 +1,5 @@
 {
   "packageManager": "python",
-  "packageName": "custom_ipywidget_example",
-  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package custom_ipywidget_example"
+  "packageName": "myproject",
+  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package myproject"
 }

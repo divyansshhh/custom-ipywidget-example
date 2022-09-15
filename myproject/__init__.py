@@ -21,7 +21,7 @@ def _jupyter_labextension_paths():
     """
     return [{
         'src': 'labextension',
-        'dest': 'custom-ipywidget-example',
+        'dest': 'myproject',
     }]
 
 
@@ -44,6 +44,6 @@ def _jupyter_nbextension_paths():
     return [{
         'section': 'notebook',
         'src': 'nbextension',
-        'dest': 'custom_ipywidget_example',
-        'require': 'custom_ipywidget_example/extension'
+        'dest': 'myproject',
+        'require': 'myproject/extension'
     }]

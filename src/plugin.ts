@@ -11,7 +11,7 @@ import * as widgetExports from './widget';
 
 import { MODULE_NAME, MODULE_VERSION } from './version';
 
-const EXTENSION_ID = 'custom-ipywidget-example:plugin';
+const EXTENSION_ID = 'myproject:plugin';
 
 /**
  * The example plugin.

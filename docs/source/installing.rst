@@ -5,27 +5,27 @@ Installation
 ============
 
 
-The simplest way to install custom_ipywidget_example is via pip::
+The simplest way to install myproject is via pip::
 
-    pip install custom_ipywidget_example
+    pip install myproject
 
 or via conda::
 
-    conda install custom_ipywidget_example
+    conda install myproject
 
 
 If you installed via pip, and notebook version < 5.3, you will also have to
 install / configure the front-end extension as well. If you are using classic
 notebook (as opposed to Jupyterlab), run::
 
-    jupyter nbextension install [--sys-prefix / --user / --system] --py custom_ipywidget_example
+    jupyter nbextension install [--sys-prefix / --user / --system] --py myproject
 
-    jupyter nbextension enable [--sys-prefix / --user / --system] --py custom_ipywidget_example
+    jupyter nbextension enable [--sys-prefix / --user / --system] --py myproject
 
 with the `appropriate flag`_. If you are using Jupyterlab, install the extension
 with::
 
-    jupyter labextension install custom-ipywidget-example
+    jupyter labextension install myproject
 
 If you are installing using conda, these commands should be unnecessary, but If
 you need to run them the commands should be the same (just make sure you choose the

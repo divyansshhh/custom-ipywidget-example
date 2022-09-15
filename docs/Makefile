@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = custom_ipywidget_example
+SPHINXPROJ    = myproject
 SOURCEDIR     = source
 BUILDDIR      = build
 

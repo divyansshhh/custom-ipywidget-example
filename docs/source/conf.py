@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# custom_ipywidget_example documentation build configuration file
+# myproject documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -58,7 +58,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'custom_ipywidget_example'
+project = 'myproject'
 copyright = '2022, me'
 author = 'me'
 
@@ -73,7 +73,7 @@ author = 'me'
 import os
 here = os.path.dirname(__file__)
 repo = os.path.join(here, '..', '..')
-_version_py = os.path.join(repo, 'custom_ipywidget_example', '_version.py')
+_version_py = os.path.join(repo, 'myproject', '_version.py')
 version_ns = {}
 with open(_version_py) as f:
     exec(f.read(), version_ns)
@@ -120,7 +120,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'custom_ipywidget_exampledoc'
+htmlhelp_basename = 'myprojectdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -147,7 +147,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'custom_ipywidget_example.tex', 'custom_ipywidget_example Documentation',
+    (master_doc, 'myproject.tex', 'myproject Documentation',
      'me', 'manual'),
 ]
 
@@ -158,8 +158,8 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (master_doc,
-    'custom_ipywidget_example',
-    'custom_ipywidget_example Documentation',
+    'myproject',
+    'myproject Documentation',
      [author], 1)
 ]
 
@@ -171,10 +171,10 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc,
-     'custom_ipywidget_example',
-     'custom_ipywidget_example Documentation',
+     'myproject',
+     'myproject Documentation',
      author,
-     'custom_ipywidget_example',
+     'myproject',
      'A Custom Jupyter Widget Library',
      'Miscellaneous'),
 ]

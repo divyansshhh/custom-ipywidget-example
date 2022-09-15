@@ -22,7 +22,6 @@ export class ExampleModel extends DOMWidgetModel {
       _view_name: ExampleModel.view_name,
       _view_module: ExampleModel.view_module,
       _view_module_version: ExampleModel.view_module_version,
-      value: 'Hello World',
     };
   }
 
@@ -40,20 +39,12 @@ export class ExampleModel extends DOMWidgetModel {
 }
 
 export class ExampleView extends DOMWidgetView {
-  // render() {
-  //   this.el.classList.add('custom-widget');
-
-  //   this.value_changed();
-  //   this.model.on('change:value', this.value_changed, this);
-  // }
   render() {
-      setTimeout(() => {
-          this.el.innerHTML = '<div style="width: 500px; height: 500px; background-color: red"></div>'
-      }, 5000)
-      return;
-  }
+    this.el.classList.add('custom-widget');
 
-  // value_changed() {
-  //   this.el.textContent = this.model.get('value');
-  // }
+    setTimeout(() => {
+        this.el.innerHTML = '<div style="width: 500px; height: 500px; background-color: red"></div>'
+    }, 5000)
+    return;
+  }
 }
