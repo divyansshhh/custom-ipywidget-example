@@ -39,12 +39,22 @@ export class ExampleModel extends DOMWidgetModel {
 }
 
 export class ExampleView extends DOMWidgetView {
+
+  // If delayed rendering happens for any reason, this should return a promise which resolves
+  // once rendering is finished.
   render() {
     this.el.classList.add('custom-widget');
 
-    setTimeout(() => {
+    const time = new Date()
+    console.log(`ipywidget render() called. time: ${time.toISOString()}`)
+
+    return new Promise((resolve) => {
+      setTimeout(() => {
         this.el.innerHTML = '<div style="width: 500px; height: 500px; background-color: red"></div>'
-    }, 5000)
-    return;
+        const newtime = new Date()
+        console.log(`ipywidget render() promise resolved. time: ${newtime.toISOString()}`)
+        resolve(void 0)
+      }, 5000)
+    })
   }
 }
