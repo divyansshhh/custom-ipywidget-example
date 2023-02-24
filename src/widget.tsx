@@ -9,8 +9,11 @@ import {
 
 import { MODULE_NAME, MODULE_VERSION } from './version';
 
+import ReactDOM from 'react-dom';
+import Component from './component';
 // Import the CSS
 import '../css/widget.css';
+import React from 'react';
 
 export class ExampleModel extends DOMWidgetModel {
   defaults() {
@@ -44,6 +47,14 @@ export class ExampleView extends DOMWidgetView {
   // once rendering is finished.
   render() {
     this.el.classList.add('custom-widget');
+
+    this.once('displayed', () => {
+      console.log('displayed has been triggered');
+      console.log(this.el);
+      setTimeout(() => {
+        ReactDOM.render(<Component />, this.el)
+      }, 1000)
+    })
 
     const time = new Date()
     console.log(`ipywidget render() called. time: ${time.toISOString()}`)
